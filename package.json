@@ -1,0 +1,7 @@
+{
+  "name": "clean-code-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Andrey Evyk <andreyevyk13@gmail.com>",
+  "license": "MIT"
+}
