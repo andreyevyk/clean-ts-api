@@ -12,7 +12,7 @@ describe('SignUp Routes', () => {
   })
 
   beforeEach(async () => {
-    const accountCollection = MongoHelper.getCollection('accounts')
+    const accountCollection = await MongoHelper.getCollection('accounts')
     await accountCollection.deleteMany({})
   })
   test('Should return an account on success', async () => {
@@ -20,7 +20,7 @@ describe('SignUp Routes', () => {
       .post('/api/signup')
       .send({
         name: 'Andrey',
-        email: 'andrey@teste.com.br ',
+        email: 'andrey@teste.com.br',
         password: '123456',
         passwordConfirmation: '123456'
       })
